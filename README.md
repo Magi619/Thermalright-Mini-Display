@@ -1,5 +1,8 @@
 # Thermalright Mini Display
 
+<img width="817" height="574" alt="image" src="https://github.com/user-attachments/assets/efe78a23-b43a-469a-ac7f-cb8515b67b35" />
+
+
 A lightweight native Windows companion for the Thermalright Burst Assassin 120 Vision (BA120 Vision) USB LCD. The application is designed to display user-selected still images and animated GIFs on the cooler's integrated 2.4-inch panel, without requiring a hardware-monitoring dashboard or a heavyweight control centre.
 
 ## Project overview
