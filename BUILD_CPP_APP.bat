@@ -23,7 +23,7 @@ if not defined VSWHERE if exist "%ProgramFiles%\Microsoft Visual Studio\Installe
 
 rem Search all installed VS editions without an overly restrictive component filter.
 if defined VSWHERE (
-  for /f "usebackq tokens=*" %%I in (\`"%VSWHERE%" -all -products * -property installationPath\`) do call :TryVisualStudio "%%I"
+  for /f "usebackq tokens=*" %%I in (`"%VSWHERE%" -all -products * -property installationPath`) do call :TryVisualStudio "%%I"
 )
 
 rem Check again in case vcvars64 initialized the environment.
@@ -76,7 +76,7 @@ if errorlevel 1 (
 )
 
 > build\appicon.rc echo #define IDI_APP_ICON 101
->> build\appicon.rc echo IDI_APP_ICON ICON "build\monitor_keyboard.ico"
+>> build\appicon.rc echo IDI_APP_ICON ICON "build/monitor_keyboard.ico"
 rc.exe /nologo /fo build\appicon.res build\appicon.rc
 if errorlevel 1 (
   echo.
