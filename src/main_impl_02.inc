@@ -240,3 +240,4 @@ public:
         if (!RegisterClassExW(&wc) && GetLastError() != ERROR_CLASS_ALREADY_EXISTS) return 3;
 
         hwnd_ = CreateWindowExW(0, wc.lpszClassName, L"Thermalright Mini Display · Native C++ v3.0.8",
+            WS_OVERLAPPED | WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX,
