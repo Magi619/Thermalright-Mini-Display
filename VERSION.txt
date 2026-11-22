@@ -1,0 +1,5 @@
+3.0.8
+Native C++ / Win32 / GDI+ / Windows HID API
+Target: Thermalright Burst Assassin 120 Vision, USB 0416:5302, PM52 / SUB0
+Icon: Windows Shell32 built-in Monitor and Keyboard icon (index 15), extracted from the target Windows installation at build time and embedded in the EXE
+Build system: Visual Studio x64 MSVC and Windows SDK, plus Windows PowerShell and Windows Resource Compiler
