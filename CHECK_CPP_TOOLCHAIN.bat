@@ -16,7 +16,7 @@ if not defined VSWHERE if exist "%ProgramFiles%\Microsoft Visual Studio\Installe
 if defined VSWHERE (
   echo [Visual Studio installations]
   "%VSWHERE%" -all -products * -property installationPath
-  for /f "usebackq tokens=*" %%I in (\`"%VSWHERE%" -all -products * -property installationPath\`) do call :TryVisualStudio "%%I"
+  for /f "usebackq tokens=*" %%I in (`"%VSWHERE%" -all -products * -property installationPath`) do call :TryVisualStudio "%%I"
 ) else (
   echo [vswhere.exe] NOT FOUND
 )
